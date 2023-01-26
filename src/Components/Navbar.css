@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding-top: 1rem;
+
+    margin: 0 auto;
+    max-width: 50%;
+    float: none;
+
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    color: var(--black);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex: 1;
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    color: white;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-list > li {
+    text-align: center;
+    box-shadow: var(--boxShadow);
+}
+
+.nav-list > li:hover {
+    color: var(--purple);
+    font-style: italic;
+    box-shadow: var(--boxShadow);
+    cursor: pointer;
+    font-weight: 800;
+}

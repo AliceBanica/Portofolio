@@ -1,0 +1,24 @@
+.intro {
+    margin: 0 auto;
+    max-width: 50%;
+    float: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    color: white;
+    flex-direction: column;
+}
+
+.intro > :nth-child(1) {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+}
+
+.intro-images > img {
+    margin: 0 0.5rem;
+}
+
+.intro-images > img {
+}
