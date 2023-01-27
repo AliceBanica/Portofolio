@@ -3,12 +3,12 @@
 }
 
 .top-side {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("./Images/background-1.jpg");
     /* background: url("./Images/background-1.jpg");
     filter: brightness(70%); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 65vh;
+    height: 38rem;
 }

@@ -1,0 +1,51 @@
+.about-container {
+    /* margin: 0 auto;
+    max-width: 50%;
+    float: none;
+    height: 5rem;
+    border: 1px solid black; */
+}
+
+.section-1 {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 5rem;
+    box-shadow: 0 5px 2px -2px var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 0.4rem; */
+}
+
+.used-technologies {
+    margin: 0 auto;
+    max-width: 50%;
+    float: none;
+
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.used-technologies > li {
+    transform: scale(0.5);
+}
+
+.about-git {
+    width: 9rem;
+}
+
+.about-github-black {
+    width: 5rem;
+}
+
+.about-javascript,
+.about-react,
+.about-html {
+    width: 5rem;
+}

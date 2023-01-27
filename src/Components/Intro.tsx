@@ -1,14 +1,20 @@
 import React from 'react'
-import './Intro.css'
+import './Intro.css';
+import linkedin from '../Images/linked.png';
+import github from '../Images/github.png'
 const Intro = () => {
   return (
     <div className='intro'>
-        <div>
-      <span>Frontend Developer</span>
-      </div>
+      <span className='title'>Junior Frontend Developer</span>
       <div className='intro-images'>
-        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_gray-64.png" alt="" />
-        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_gray-64.png" alt="" />
+        <a href="https://www.linkedin.com/feed/">
+          <img className='intro-links linkedin'  src={linkedin} alt="" />
+          <span className='span-linkedin'>Linkedin</span>
+        </a>
+        <a className='a-github' href="https://github.com/">
+          <img className='intro-links github' src={github} alt="" />
+          <span className='span-github'>Github</span>
+        </a>
       </div>
     </div>
   )
