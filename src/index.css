@@ -4,6 +4,9 @@ body {
     float: none; */
 
     --grey: #d3d3d3;
+    --black: #0f0c08;
+    --purple: #2b164f;
+    --darkGrey: #2f2f2f;
 
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
