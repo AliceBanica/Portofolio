@@ -1,20 +1,23 @@
 .about-container {
+    /* display: flex;
+    flex-direction: column; */
     /* margin: 0 auto;
     max-width: 50%;
     float: none;
     height: 5rem;
     border: 1px solid black; */
+    height: 80vh;
+    background-color: #f6f6f6;
 }
 
 .section-1 {
-    width: 100%;
     background-color: #f2f2f2;
     height: 5rem;
-    box-shadow: 0 5px 2px -2px var(--grey);
+    box-shadow: 0 7px 2px -2px #d3d3d3;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 0.4rem; */
+    z-index: 100;
 }
 
 .used-technologies {
@@ -48,4 +51,197 @@
 .about-react,
 .about-html {
     width: 5rem;
+}
+
+.section-2 {
+    background-color: #f6f6f6;
+    box-shadow: 0 7px 2px -2px #d3d3d3;
+    margin: 0;
+}
+
+.description {
+    margin: 0.4rem auto 0 auto;
+    max-width: 50%;
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0.5;
+    height: 14rem;
+    box-shadow: 10px 0px 2px -2px #d3d3d3;
+}
+
+.description-left > p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2f2f2f;
+    margin: 0;
+    padding: 1.2rem 0;
+}
+
+.description-points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.8rem;
+    padding: 2.5rem 0 2.5rem 0.8rem;
+    list-style-type: none;
+    margin: 0;
+    width: 97%;
+
+    color: var(--darkGrey);
+}
+
+.description-points > li {
+    display: flex;
+}
+
+.description-points > li::before {
+    content: "\2022";
+    color: var(--purple);
+    font-weight: bold;
+    display: inline-block;
+    margin-left: -0.8em;
+}
+
+.btn-info {
+    border: none;
+    color: var(--black);
+    font-size: 1.1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+.active {
+    color: #4c1a54;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-right: 3px solid var(--purple);
+}
+
+.btn-info:hover {
+    cursor: pointer;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.description-right {
+    display: flex;
+    align-items: center;
+    flex: 1.5;
+    padding-left: 2rem;
+    height: 43vh;
+
+    color: var(--darkGrey);
+}
+
+.experience-container {
+    display: flex;
+    width: 100%;
+}
+
+.experience-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.bar {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5rem;
+}
+.bar > li,
+.experience-list > li {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.bar > li:before {
+    content: "\25CF";
+    margin-right: 20px;
+    font-size: 20px;
+}
+.bar > li:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    border-left: 2px solid var(--purple);
+    margin-left: 5px;
+    height: 100%;
+}
+.bar > li:first-of-type:after {
+    top: 50%;
+}
+.bar > li:last-of-type:after {
+    top: -50%;
+}
+
+.bar > li::before {
+    color: var(--purple);
+}
+
+.experience-left > ul {
+    text-align: end;
+}
+
+.invisible {
+    color: #f6f6f6;
+}
+
+.experience-list {
+    list-style-type: none;
+}
+
+.third-li {
+    padding-top: 0.1rem !important;
+}
+
+.fifth-li {
+    padding-top: 0.1rem !important;
+}
+
+.aboutme-container {
+    margin-left: 4.5rem;
+}
+
+.location-icon {
+    height: 1.4rem;
+    margin: 0;
+}
+
+.location-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.location-div > span {
+    margin-left: 0.4rem;
+    font-size: 1.2rem;
+    color: var(--darkGrey);
+}
+
+.aboutme-container > h1 {
+    color: var(--darkGrey);
+    margin-bottom: 0.5rem;
+}
+
+.aboutme-container > p {
+    font-size: 1.2rem;
+    color: var(--darkGrey);
 }
