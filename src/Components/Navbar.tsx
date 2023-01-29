@@ -10,11 +10,11 @@ export const Navbar = () => {
         </div>
         <div className="nav-right">
             <ul className='nav-list'>
-              <a href="">
-                <li>About</li>
+              <a href="#technologies">
+                <li>Technologies</li>
               </a>
-              <a href="">
-              <li>Technologies</li>
+              <a href="#about">
+              <li>About</li>
               </a>
               <a href="">
               <li>Experience</li>
