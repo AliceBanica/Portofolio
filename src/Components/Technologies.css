@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: center;
     z-index: 100;
+    transition: 1s;
+    flex-direction: column;
 }
 
 .used-technologies {
@@ -39,4 +41,84 @@
 .about-react,
 .about-html {
     width: 5rem;
+}
+
+.section-1:hover {
+    height: 15rem;
+}
+
+.tech-info {
+    height: 3rem;
+    display: none;
+    width: 50%;
+
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--purple);
+    z-index: 1000;
+}
+
+.section-1:hover > .tech-info {
+    display: block;
+    text-align: center;
+    padding: 1.7rem 0;
+}
+
+.info-box-style-github,
+.info-box-style-git,
+.info-box-style-html,
+.info-box-style-css,
+.info-box-style-typeScript,
+.info-box-style-javaScript,
+.info-box-style-react {
+    color: var(--purple);
+    box-shadow: 0 0 0.6rem var(--purple);
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+}
+
+.info-box-style-github::before,
+.info-box-style-git::before,
+.info-box-style-html::before,
+.info-box-style-css::before,
+.info-box-style-typeScript::before,
+.info-box-style-javaScript::before,
+.info-box-style-react::before {
+    content: "";
+    position: absolute;
+    top: 44.6rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    background-color: var(--purple);
+    transform: rotate(45deg);
+    z-index: -2;
+    background-color: #f2f2f2;
+    box-shadow: 0.1rem 0.2rem 0.6rem var(--purple);
+}
+
+.info-box-style-github::before {
+    right: 92.2rem;
+}
+
+.info-box-style-git::before {
+    right: 81rem;
+}
+
+.info-box-style-html::before {
+    right: 70.6rem;
+}
+
+.info-box-style-css::before {
+    right: 61.5rem;
+}
+
+.info-box-style-typeScript::before {
+    right: 51.5rem;
+}
+.info-box-style-javaScript::before {
+    right: 42.1rem;
+}
+
+.info-box-style-react::before {
+    right: 33.3rem;
 }

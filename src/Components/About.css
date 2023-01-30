@@ -1,11 +1,4 @@
 .about-container {
-    /* display: flex;
-    flex-direction: column; */
-    /* margin: 0 auto;
-    max-width: 50%;
-    float: none;
-    height: 5rem;
-    border: 1px solid black; */
     height: 80vh;
     background-color: #f6f6f6;
 }
@@ -95,7 +88,7 @@
     align-items: center;
     flex: 1.5;
     padding-left: 2rem;
-    height: 43vh;
+    height: 40vh;
 
     color: var(--darkGrey);
 }
