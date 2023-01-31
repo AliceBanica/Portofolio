@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     z-index: 100;
-    transition: 1s;
+    transition: 0.7s;
     flex-direction: column;
 }
 
@@ -44,81 +44,74 @@
 }
 
 .section-1:hover {
-    height: 15rem;
+    height: 13rem;
+    transition: 1.1s;
 }
 
 .tech-info {
-    height: 3rem;
+    height: 9rem;
     display: none;
     width: 50%;
 
     font-size: 1.7rem;
     font-weight: bold;
     color: var(--purple);
-    z-index: 1000;
 }
 
 .section-1:hover > .tech-info {
     display: block;
-    text-align: center;
-    padding: 1.7rem 0;
-}
-
-.info-box-style-github,
-.info-box-style-git,
-.info-box-style-html,
-.info-box-style-css,
-.info-box-style-typeScript,
-.info-box-style-javaScript,
-.info-box-style-react {
-    color: var(--purple);
     box-shadow: 0 0 0.6rem var(--purple);
-    border-radius: 0.3rem;
-    font-size: 1.3rem;
+    animation: fadeIn 2s;
 }
 
-.info-box-style-github::before,
-.info-box-style-git::before,
-.info-box-style-html::before,
-.info-box-style-css::before,
-.info-box-style-typeScript::before,
-.info-box-style-javaScript::before,
-.info-box-style-react::before {
-    content: "";
+.section-1:hover > .used-technologies,
+.section-1:hover > .tech-hover {
+    display: none;
+}
+
+.tech-hover {
     position: absolute;
-    top: 44.6rem;
-    height: 1.7rem;
-    width: 1.7rem;
-    background-color: var(--purple);
-    transform: rotate(45deg);
-    z-index: -2;
-    background-color: #f2f2f2;
-    box-shadow: 0.1rem 0.2rem 0.6rem var(--purple);
+    top: 41.5rem;
+    color: var(--darkgrey);
+    right: 3rem;
+    display: block;
 }
 
-.info-box-style-github::before {
-    right: 92.2rem;
+.table-tech {
+    width: 70%;
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
 }
 
-.info-box-style-git::before {
-    right: 81rem;
+.table-tech > tr > th {
+    text-align: start;
+    width: 30%;
+    padding-bottom: 1rem;
 }
 
-.info-box-style-html::before {
-    right: 70.6rem;
+.table-tech > tr > td {
+    width: 25%;
+    font-weight: 500;
+    padding-left: 1.2rem;
 }
 
-.info-box-style-css::before {
-    right: 61.5rem;
+.learning-tech-p1 {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
 }
 
-.info-box-style-typeScript::before {
-    right: 51.5rem;
-}
-.info-box-style-javaScript::before {
-    right: 42.1rem;
+.learning-tech-p2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 1.7rem;
 }
 
-.info-box-style-react::before {
-    right: 33.3rem;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
