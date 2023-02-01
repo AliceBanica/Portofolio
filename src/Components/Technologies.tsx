@@ -11,11 +11,16 @@ import imgGitblack from '../Images/github-black.png';
 import './Technologies.css';
 
 const Technologies = () => {
+    const [skillsClicked, setSkillsClicked] = useState<boolean>(false);
+
+    const handleClickSkills = () =>{
+        setSkillsClicked(!skillsClicked)
+    }
 
     const TechInfo = () =>{
     return (
-            <div className={'tech-info'}>
-                <table className='table-tech'>
+            <div className={clsx('tech-info', skillsClicked && 'tech-info-clicked', !skillsClicked && 'tech-info-not-clicked')}>
+                <table className={clsx('table-tech', skillsClicked && 'table-tech-clicked')}>
                     <tr>
                         <th>Skills:</th>
                     </tr>
@@ -31,6 +36,7 @@ const Technologies = () => {
                         <td>&#11049; Git</td>
                     </tr>
                 </table>
+                <div className='table-detail'></div>
             </div>
         )
 }
@@ -38,8 +44,8 @@ const Technologies = () => {
 
     return (
         <section>
-            <div className='section-1'>
-                <ul className='used-technologies' id='technologies'>
+            <div className={clsx('section-1', skillsClicked && 'section-1-clicked', !skillsClicked && 'section-1-not-clicked')}  onClick={handleClickSkills}>
+                <ul className={clsx('used-technologies', skillsClicked && 'used-technologies-clicked', !skillsClicked && 'used-technologies-not-clicked')} id='technologies'>
                     <li>
                         <img className='about-github-black' src={imgGitblack} alt="" />
                     </li>
@@ -62,7 +68,9 @@ const Technologies = () => {
                         <img className='about-react' src={imgReact} alt="" />
                     </li>
                 </ul>
-                <div className='tech-hover'>Hover for skills</div>
+                <div className={clsx('tech-hover', skillsClicked && 'tech-hover-clicked')} >Hover for skills</div>
+                <div className={clsx('tech-pin', skillsClicked && 'tech-pin-clicked')} >Click to pin</div>
+                <div className={clsx('tech-pinned', skillsClicked && 'tech-pinned-clicked')} >Pinned</div>
                 <TechInfo/>
             </div>
         </section>
