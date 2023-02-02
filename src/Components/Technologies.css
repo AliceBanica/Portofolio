@@ -163,7 +163,7 @@
     margin: 0.5rem 1rem;
 }
 
-.table-tech > tr > th {
+.table-tech > tbody > tr > th {
     text-align: start;
     width: 30%;
     padding-bottom: 1rem;
@@ -171,7 +171,6 @@
 
 .table-tech > tr > td {
     width: 25%;
-    /* font-weight: 500; */
     padding-left: 1.2rem;
     padding-bottom: 1rem;
 }

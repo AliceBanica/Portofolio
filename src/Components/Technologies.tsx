@@ -21,20 +21,22 @@ const Technologies = () => {
     return (
             <div className={clsx('tech-info', skillsClicked && 'tech-info-clicked', !skillsClicked && 'tech-info-not-clicked')}>
                 <table className={clsx('table-tech', skillsClicked && 'table-tech-clicked')}>
-                    <tr>
-                        <th>Skills:</th>
-                    </tr>
-                    <tr>
-                        <td>&#11049; React</td>
-                        <td>&#11049; JavaScript</td>
-                        <td>&#11049; CSS</td>
-                        <td>&#11049; Github</td>
-                    </tr>
-                    <tr>
-                        <td>&#11049; Typescript</td>
-                        <td>&#11049; HTML</td>
-                        <td>&#11049; Git</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <th>Skills:</th>
+                        </tr>
+                        <tr>
+                            <td>&#11049; React</td>
+                            <td>&#11049; JavaScript</td>
+                            <td>&#11049; CSS</td>
+                            <td>&#11049; Github</td>
+                        </tr>
+                        <tr>
+                            <td>&#11049; Typescript</td>
+                            <td>&#11049; HTML</td>
+                            <td>&#11049; Git</td>
+                        </tr>
+                    </tbody>
                 </table>
                 <div className='table-detail'></div>
             </div>

@@ -3,11 +3,12 @@ body {
     max-width: 50%;
     float: none; */
 
-    --grey: #d3d3d3;
+    --lighterGrey: #d3d3d3;
     --black: #0f0c08;
     --purple: #2b164f;
     --darkGrey: #2f2f2f;
-    --backgrund: #f2f2f2;
+    --background: #f2f2f2;
+    --grey: #bebebe;
 
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
