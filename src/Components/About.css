@@ -99,6 +99,7 @@
 
 .experience-container {
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -175,17 +176,23 @@
     user-select: none;
 }
 
+.not-li {
+    user-select: none;
+}
+
 .about-see-more-first {
     top: 0.3rem;
 }
 .about-see-more-second {
     top: 0.3rem;
+    right: 1.2rem !important;
 }
 .about-see-more-third {
     top: -0.7rem;
 }
 .about-see-more-fourth {
     top: 0.3rem;
+    right: 1.2rem !important;
 }
 .about-see-more-fifth {
     top: -0.7rem;
@@ -249,4 +256,31 @@
 .about-more-info {
     height: 15rem;
     background-color: red;
+}
+
+.experience-container-expanded {
+}
+
+.experience-more-info {
+    width: 100%;
+    height: 10rem;
+    background-color: orange;
+    display: none;
+}
+
+.more-info-hidden {
+    display: none;
+}
+
+.more-info-first {
+    display: block;
+}
+
+.show-div {
+    display: block;
+}
+
+.more-info-active {
+    height: 60vh;
+    background-color: rgb(214, 150, 150);
 }
