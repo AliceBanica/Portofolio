@@ -64,7 +64,9 @@
     right: -10rem;
     width: 2rem;
     height: 2rem;
-    background-color: var(--purple);
+
+    background: linear-gradient(-45deg, #51087e, #6c0ba9);
+    animation: gradient 10s ease infinite;
     box-shadow: 0.1rem 0.2rem 0.6rem var(--purple);
     rotate: 45deg;
 }

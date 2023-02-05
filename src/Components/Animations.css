@@ -1,0 +1,225 @@
+.animations-section {
+    background-color: #f6f6f6;
+    box-shadow: 0 7px 2px -2px #d3d3d3;
+    margin: 0;
+}
+
+.animations-container {
+    margin: 0 auto;
+    max-width: 50%;
+    float: none;
+
+    height: 40rem;
+}
+
+.find-more-desc {
+    width: 100%;
+}
+
+.css-waves {
+    /* position: relative; */
+    width: 100%;
+    height: 10rem;
+    margin-bottom: -7px;
+    min-height: 10rem;
+    max-height: 20rem;
+}
+
+.animated-waves > use {
+    animation: infinite-waves 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.animated-waves > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 10s;
+}
+.animated-waves > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 13s;
+}
+.animated-waves > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 17s;
+}
+.animated-waves > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 23s;
+}
+@keyframes infinite-waves {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .css-waves {
+        height: 20rem;
+        min-height: 15rem;
+    }
+}
+
+.fish-container {
+    width: 100%;
+}
+
+.fish-1,
+.fish-2 {
+    width: 1rem;
+    /* height: 80px; */
+    margin: 0;
+}
+
+.fish-1 {
+    animation: swim-1 10s infinite;
+}
+
+.fish-2 {
+    animation: swim-2 10s infinite;
+    animation-delay: -6s;
+}
+
+.fish-3 {
+    animation: swim-3 10s infinite;
+    animation-delay: -3s;
+}
+
+.fish-body-1,
+.fish-body-2,
+.fish-body-3 {
+    position: relative;
+    margin-top: 1.3rem;
+    margin-left: 1rem;
+
+    border-radius: 50%;
+    width: 2rem;
+    height: 1.2rem;
+}
+
+.fish-body-1 {
+    background-color: purple;
+}
+.fish-body-2 {
+    background-color: #bbc1c6;
+}
+
+.fish-body-3 {
+    background-color: #8a8aff;
+}
+
+.eye {
+    position: absolute;
+    margin-left: 0.9rem;
+    margin-top: 0.3rem;
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.pupil {
+    position: absolute;
+    z-index: 2;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+    background-color: black;
+    border-radius: 50%;
+    height: 0.4rem;
+    width: 0.4rem;
+}
+
+.fin-1,
+.fin-2,
+.fin-3 {
+    margin-top: -1.2rem;
+    background-color: purple;
+    border-radius: 50%;
+    transform: rotate(40deg);
+    width: 1.3rem;
+    height: 1rem;
+}
+
+.fin-1 {
+    background-color: purple;
+}
+
+.fin-2 {
+    background-color: #bbc1c6;
+}
+
+.fin-3 {
+    background-color: #8a8aff;
+}
+
+.fin-bottom {
+    margin-top: -10px;
+    transform: rotate(-40deg);
+}
+
+@keyframes swim-1 {
+    0% {
+        transform: translateY(15rem) translateX(-1.5rem) rotate(10deg);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(14rem) translateX(10rem) rotate(20deg);
+    }
+    50% {
+        transform: translateY(13.5rem) translateX(25rem);
+    }
+    75% {
+        transform: translateY(14rem) translateX(30rem) rotate(-10deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(13rem) translateX(43rem) rotate(-10deg);
+        opacity: 0;
+    }
+}
+
+@keyframes swim-2 {
+    0% {
+        transform: translateY(12rem) translateX(-1.5rem) rotate(-20deg);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(11rem) translateX(10rem) rotate(10deg);
+    }
+    50% {
+        transform: translateY(12rem) translateX(25rem);
+        opacity: 0.7;
+    }
+    75% {
+        transform: translateY(11rem) translateX(30rem) rotate(-10deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(12rem) translateX(43rem) rotate(-20deg);
+        opacity: 0;
+    }
+}
+
+@keyframes swim-3 {
+    0% {
+        transform: translateY(2rem) translateX(-1.5rem) rotate(-20deg);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(12rem) translateX(10rem) rotate(10deg);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(8.5rem) translateX(25rem);
+        opacity: 0.9;
+    }
+    75% {
+        transform: translateY(6rem) translateX(30rem) rotate(-10deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(5rem) translateX(43rem) rotate(-10deg);
+        opacity: 0;
+    }
+}

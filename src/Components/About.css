@@ -1,5 +1,4 @@
 .about-container {
-    height: 80vh;
     background-color: #f6f6f6;
 }
 
@@ -23,8 +22,9 @@
     justify-content: center;
     flex-direction: column;
     flex: 0.5;
-    height: 14rem;
+    height: 100%;
     box-shadow: 10px 0px 2px -2px #d3d3d3;
+    transition: height 0.8s ease;
 }
 
 .description-left > p {
@@ -88,9 +88,9 @@
     align-items: center;
     flex: 1.5;
     padding-left: 2rem;
-    height: 50vh;
-
+    height: 27rem;
     color: var(--darkGrey);
+    transition: height 0.8s ease;
 }
 
 .period-right {
@@ -123,6 +123,10 @@
 .experience-list > li {
     position: relative;
     padding: 1rem 0;
+    width: 22rem;
+}
+.experience-list > li {
+    width: 22rem;
 }
 
 .bar > li:before {
@@ -185,14 +189,14 @@
 }
 .about-see-more-second {
     top: 0.3rem;
-    right: 1.2rem !important;
+    right: 3rem !important;
 }
 .about-see-more-third {
     top: -0.7rem;
 }
 .about-see-more-fourth {
     top: 0.3rem;
-    right: 1.2rem !important;
+    right: 3rem !important;
 }
 .about-see-more-fifth {
     top: -0.7rem;
@@ -212,6 +216,7 @@
 
 .experience-list {
     list-style-type: none;
+    padding: 0;
 }
 
 .third-li {
@@ -253,34 +258,81 @@
     color: var(--darkGrey);
 }
 
-.about-more-info {
-    height: 15rem;
-    background-color: red;
-}
-
-.experience-container-expanded {
-}
-
 .experience-more-info {
     width: 100%;
-    height: 10rem;
-    background-color: orange;
-    display: none;
+    height: 7rem;
+    opacity: 0;
+    transition: all 1s;
+    box-shadow: 0.1rem 0.2rem 0.6rem var(--purple);
+    animation: fadeIn 2s;
+    transition: height 0.8s ease;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
-.more-info-hidden {
-    display: none;
+.exp-title {
+    color: #4c1a54;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    margin-top: 0.7rem;
+    padding-left: 1.5rem;
 }
 
-.more-info-first {
-    display: block;
+.exp-desc {
+    padding-left: 2rem;
+    margin-top: 0.5rem;
 }
 
 .show-div {
-    display: block;
+    opacity: 1;
 }
 
 .more-info-active {
-    height: 60vh;
-    background-color: rgb(214, 150, 150);
+    height: 40rem;
+    transition: height 1s ease;
+}
+
+.exp-desc-ul {
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.exp-hidden {
+    display: hidden;
+    list-style: none;
+}
+
+.exp-detail {
+    position: relative;
+    top: -8.6rem;
+    right: -41rem;
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(-45deg, #51087e, #6c0ba9);
+    animation: gradient 10s ease infinite;
+
+    box-shadow: 0.1rem 0.2rem 0.6rem var(--purple);
+    rotate: 45deg;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
