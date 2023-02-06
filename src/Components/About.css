@@ -123,7 +123,7 @@
 .experience-list > li {
     position: relative;
     padding: 1rem 0;
-    width: 22rem;
+    width: 21rem;
 }
 .experience-list > li {
     width: 22rem;
@@ -156,8 +156,10 @@
 
 .experience-period {
     padding: 0;
+    padding-top: 0.2rem;
     margin: 0;
-    color: var(--grey);
+    color: #979797;
+    font-size: 1rem;
 }
 
 .about-see-more {
@@ -189,14 +191,14 @@
 }
 .about-see-more-second {
     top: 0.3rem;
-    right: 3rem !important;
+    right: 2rem !important;
 }
 .about-see-more-third {
     top: -0.7rem;
 }
 .about-see-more-fourth {
     top: 0.3rem;
-    right: 3rem !important;
+    right: 2rem !important;
 }
 .about-see-more-fifth {
     top: -0.7rem;

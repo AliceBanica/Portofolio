@@ -31,7 +31,7 @@ const Experience = ({ newHeight }: { newHeight: any }) => {
     let MasterDesc = () => {
         return <div>
             <ul  className='exp-desc-ul' >
-                <li>Solv specific research problems, with the use of specialized software products / devices for applications in Electrical Engineering; </li>
+                <li>Solve specific research problems, with the use of specialized software products / devices for applications in Electrical Engineering; </li>
                 <li className='exp-hidden'>&nbsp;</li>
             </ul>
         </div>
@@ -116,13 +116,13 @@ const Experience = ({ newHeight }: { newHeight: any }) => {
                     <li className='third-li'>
                         <div className='about-see-more about-see-more-third' onClick={() => { handleClickState(3) }}>?</div>
                         Master's Degree - Applied Informatics in Electrical Engineering (UPB)
-                        <p className='experience-period'>2020 - 2022</p>
+                        <p className='experience-period'>Oct 2020 - Iul 2022</p>
                     </li>
                     <li className='not-li'>&nbsp;</li>
                     <li className='fifth-li'>
                         <div className='about-see-more  about-see-more-fifth' onClick={() => { handleClickState(5) }}>?</div>
                         Bachelor's Degree - Applied Informatics in Electrical Engineering (UPB)
-                        <p className='experience-period'>2016-2020</p>
+                        <p className='experience-period'>Oct 2016 - Iul 2020</p>
                     </li>
                 </ul>
             </div>
