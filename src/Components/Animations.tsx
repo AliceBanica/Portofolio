@@ -49,6 +49,24 @@ const OceanAnimation = () =>{
             </div>
                 
 
+            <div className="sun-container"></div>
+           
+            <div className="cloud-container-1">
+                <div className='cloud-1 cloud-part-1'></div>
+                <div className='cloud-1 cloud-part-2'></div>
+                <div className='cloud-1 cloud-part-3'></div>
+                <div className='cloud-1 cloud-part-4'></div>
+                <div className='cloud-1 cloud-part-5'></div>
+            </div>
+
+            <div className="cloud-container-2">
+                <div className='cloud-2 cloud-part-1'></div>
+                <div className='cloud-2 cloud-part-2'></div>
+                <div className='cloud-2 cloud-part-3'></div>
+                <div className='cloud-2 cloud-part-4'></div>
+                <div className='cloud-2 cloud-part-5'></div>
+            </div>
+
             <svg
                 className="css-waves"
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,17 +82,32 @@ const OceanAnimation = () =>{
                 ></path>
                 </defs>
                 <g className="animated-waves">
-                <use href="#wave-pattern" x="48" y="0" fill="rgba(100,149,237,0.7"></use>
-                <use href="#wave-pattern" x="48" y="1" fill="rgba(100,149,237,0.5)"></use>
-                <use href="#wave-pattern" x="48" y="2" fill="rgba(100,149,237,0.3)"></use>
-                <use href="#wave-pattern" x="48" y="3" fill="rgba(100,149,237,0.3)"></use>
+                <use href="#wave-pattern" x="40" y="3" fill="rgba(100,149,237,0.7"></use>
+                <use href="#wave-pattern" x="40" y="2" fill="rgba(100,149,237,0.5)"></use>
+                <use href="#wave-pattern" x="40" y="3" fill="rgba(100,149,237,0.3)"></use>
+                <use href="#wave-pattern" x="40" y="4" fill="rgba(100,149,237,0.3)"></use>
                 </g>
             </svg>
         </div>
   )
 }
 
-
+const KidAnimation = () =>{
+    return <div className='kid-container'>
+            <div className='kid-head'>
+                <div className='head'></div>
+                <div className='kid-eye eye-left'>
+                    <div className='kid-pupil'></div>
+                </div>
+                <div className='kid-eye eye-right'>
+                     <div className='kid-pupil'></div>
+                </div>
+                <div className='kid-nose'></div>
+                <div className='kid-mouth'></div>
+                <div className='kid-ear'></div>
+            </div>
+        </div>
+}
 
 const Animations = () => {
     return (
@@ -83,7 +116,7 @@ const Animations = () => {
                     <AnimationsTitle/>
                     <div className='animations-container'>
                         <OceanAnimation/>
-                        <OceanAnimation/>
+                        <KidAnimation/>
                         <p>More to come...</p>
                     </div>
                 </div>
