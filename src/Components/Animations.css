@@ -66,13 +66,7 @@
     background-color: #e4f4f3;
     overflow: hidden;
 
-    transition: transform 0.4s ease;
     transform-origin: 50% 50%;
-}
-
-.find-more-desc:hover {
-    transform: scale(1.1);
-    width: 100%;
 }
 
 .sun-container {
@@ -187,7 +181,7 @@
 
     100% {
         opacity: 0.8;
-        left: 28rem;
+        left: 52rem;
     }
 }
 
@@ -328,17 +322,17 @@
         opacity: 0;
     }
     25% {
-        transform: translateY(14rem) translateX(7rem) rotate(12deg);
+        transform: translateY(14rem) translateX(8rem) rotate(12deg);
     }
     50% {
-        transform: translateY(13.5rem) translateX(15rem);
+        transform: translateY(13.5rem) translateX(17rem);
     }
     75% {
-        transform: translateY(14rem) translateX(19rem) rotate(-10deg);
+        transform: translateY(14rem) translateX(25rem) rotate(-10deg);
         opacity: 0.8;
     }
     100% {
-        transform: translateY(13rem) translateX(23rem) rotate(-10deg);
+        transform: translateY(13rem) translateX(35rem) rotate(-10deg);
         opacity: 0;
     }
 }
@@ -356,11 +350,11 @@
         opacity: 0.7;
     }
     75% {
-        transform: translateY(10rem) translateX(18rem) rotate(-10deg);
+        transform: translateY(10rem) translateX(25rem) rotate(-10deg);
         opacity: 0.7;
     }
     100% {
-        transform: translateY(12rem) translateX(22rem) rotate(0deg);
+        transform: translateY(12rem) translateX(37rem) rotate(0deg);
         opacity: 0;
     }
 }
@@ -375,145 +369,550 @@
         opacity: 0.7;
     }
     50% {
-        transform: translateY(9rem) translateX(12rem);
+        transform: translateY(9rem) translateX(17rem);
         opacity: 0.9;
     }
     75% {
-        transform: translateY(7rem) translateX(17rem) rotate(-10deg);
+        transform: translateY(7rem) translateX(24rem) rotate(-10deg);
         opacity: 0.7;
     }
     100% {
-        transform: translateY(8rem) translateX(23rem) rotate(0deg);
+        transform: translateY(8rem) translateX(30rem) rotate(0deg);
         opacity: 0;
     }
 }
 
 /* -------------------end wave animation */
 
-/* ------------------kid animation */
+/* ------------------balloons animation */
 
-.kid-container {
-    background-color: rgb(163, 163, 205);
+.animation-balloon-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #91b9d0, #b1d4e0);
+    animation: gradient-sky 6s ease infinite;
+    background-size: 400% 400%;
+}
+
+.balloons-container-1 {
+    position: relative;
+    transform: scale(0.6);
+    top: 3rem;
+    animation: move-up-down-balloon-1 3s ease infinite,
+        left-to-right-balloon-1 20s ease infinite;
+}
+
+.balloons-container-2 {
+    position: relative;
+    transform: scale(0.8);
+    top: 5rem;
+    animation: move-up-down-balloon-2 3s ease infinite,
+        left-to-right-balloon-2 25s ease infinite;
+}
+
+.balloons-container-3 {
+    position: relative;
+    transform: scale(0.3);
+    top: 2rem;
+    animation: move-up-down-balloon-3 3s ease infinite,
+        left-to-right-balloon-3 30s ease infinite;
+}
+
+.balloons-container-4 {
+    position: relative;
+    transform: scale(0.3);
+    top: 9rem;
+    left: -3rem;
+    animation: move-up-down-balloon-4 3s ease infinite;
+}
+
+.balloons-container-5 {
+    position: relative;
+    transform: scale(0.35);
+    top: 4.3rem;
+    left: 9rem;
+    animation: move-up-down-balloon-5 3s ease infinite;
+}
+
+.balloon-1,
+.balloon-2,
+.balloon-3,
+.balloon-4,
+.balloon-5 {
+    position: absolute;
+}
+
+/* balloon1 */
+.balloon-1 {
+    width: 7rem;
+    background-color: #d18700;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.balloon-2 {
+    left: 1.1rem;
+    width: 4.8rem;
+    background-color: #ffd68a;
+    height: 7.6rem;
+    border-radius: 50%;
+}
+
+.balloon-3 {
+    left: 2.2rem;
+    width: 2.4rem;
+    background-color: #d18700;
+    height: 7.5rem;
+    border-radius: 50%;
+}
+
+.balloon-4 {
+    top: 2.5rem;
+    rotate: -45deg;
+    left: 0.9rem;
+    width: 3rem;
+    background-color: orange;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.balloon-5 {
+    top: 2.5rem;
+    rotate: 45deg;
+    left: 3rem;
+    width: 3rem;
+    background-color: orange;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+/* end baloon 1 */
+
+/* balloon2 */
+.color-b2-1 {
+    background-color: #d10000 !important;
+}
+.color-b2-2 {
+    background-color: #e7625f !important;
+}
+.color-b2-3 {
+    background-color: #d10000 !important;
+}
+.color-b2-4 {
+    background-color: #ff5c5c !important;
+}
+.color-b2-5 {
+    background-color: #ff5c5c !important;
+}
+.color-b2-basket {
+    background-color: #750000 !important;
+}
+/* end balloon2 */
+
+/* balloon3 */
+.color-b3-1 {
+    background-color: #4120a9 !important;
+}
+.color-b3-2 {
+    background-color: #a16ae8 !important;
+}
+.color-b3-3 {
+    background-color: #4120a9 !important;
+}
+.color-b3-4 {
+    background-color: #a1a9fe !important;
+}
+.color-b3-5 {
+    background-color: #a1a9fe !important;
+}
+.color-b3-basket {
+    background-color: #341948 !important;
+}
+/* end balloon3 */
+
+/* balloon4 */
+.color-b4-1 {
+    background-color: #73436d !important;
+}
+.color-b4-2 {
+    background-color: #e5e6e9 !important;
+}
+.color-b4-3 {
+    background-color: #73436d !important;
+}
+.color-b4-4 {
+    background-color: #b67c9a !important;
+}
+.color-b4-5 {
+    background-color: #b67c9a !important;
+}
+.color-b4-basket {
+    background-color: #1f252f !important;
+}
+/* end balloon4 */
+
+/* balloon5 */
+.color-b5-1 {
+    background-color: #1a3315 !important;
+}
+.color-b5-2 {
+    background-color: #b1d8b7 !important;
+}
+.color-b5-3 {
+    background-color: #1a3315 !important;
+}
+.color-b5-4 {
+    background-color: #94c973 !important;
+}
+.color-b5-5 {
+    background-color: #94c973 !important;
+}
+.color-b5-basket {
+    background-color: #2f5233 !important;
+}
+/* end balloon5 */
+.balloon-fire {
+    width: 2.6rem;
+    height: 1.2rem;
+    background-color: #754c00;
+    position: absolute;
+    top: 7.4rem;
+    left: 2.1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+}
+
+.balloon-cord-left {
+    position: absolute;
+    border-left: 2px solid #754c00;
+    top: 8.4rem;
+    left: 2.3rem;
+    rotate: 10deg;
+
+    height: 1rem;
+}
+
+.balloon-cord-right {
+    position: absolute;
+    border-right: 2px solid #754c00;
+    top: 8.4rem;
+    left: 4.5rem;
+    rotate: -10deg;
+
+    height: 1rem;
+}
+
+.balloon-basket {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: #a36a00;
+    position: absolute;
+    top: 9.3rem;
+    left: 2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+}
+
+.mountains-container {
     position: relative;
 }
 
-.kid-head {
+.mountain-1 {
     position: absolute;
+    top: 10rem;
+    width: 12rem;
+    height: 12rem;
+    background-color: #9388a2;
+    rotate: 45deg;
+}
+
+.mountain-2 {
+    position: absolute;
+    top: 13rem;
+    left: 5rem;
+    width: 12rem;
+    height: 12rem;
+    background-color: #57896a;
+    rotate: 45deg;
+}
+
+.mountain-3 {
+    position: absolute;
+    top: 8rem;
+    left: 7rem;
+    width: 14rem;
+    height: 12rem;
+    background-color: gray;
+    rotate: 45deg;
+}
+
+.mountain-4 {
+    position: absolute;
+    top: 14rem;
+    left: 14rem;
+    width: 20rem;
+    height: 14rem;
+    background-color: pink;
+    rotate: 45deg;
+}
+
+.mountain-5 {
+    position: absolute;
+    top: 9rem;
+    left: 26rem;
+    width: 17rem;
+    height: 19rem;
+    background-color: #914955;
+    rotate: 45deg;
+}
+.mountain-6 {
+    position: absolute;
+    top: 12rem;
+    left: 37rem;
+    width: 17rem;
+    height: 19rem;
+    background-color: #57896a;
+    rotate: 45deg;
+}
+
+.cloud-container-balloons-1 {
+    position: relative;
     top: 6rem;
-    left: 8rem;
+    left: 9rem;
+    transform: scale(0.8);
+    opacity: 0.9;
+    animation: move-up-down-clouds 4s infinite;
 }
 
-.head {
-    position: absolute;
-    background-color: #ffdbac;
+.cloud-container-balloons-2 {
+    position: relative;
+    top: 12rem;
+    left: 4rem;
+    transform: scale(0.8);
+    opacity: 0.9;
+    animation: move-up-down-clouds 5s infinite;
+    animation-delay: 1s;
+}
 
+.cloud-container-balloons-3 {
+    position: relative;
+    top: 9rem;
+    left: -2rem;
+    transform: scale(0.8);
+    opacity: 0.5;
+    animation: move-up-down-clouds 6s infinite;
+    animation-delay: 3s;
+}
+
+.cloud-container-balloons-4 {
+    position: relative;
+    top: 8rem;
+    left: 19rem;
+    transform: scale(0.8);
+    opacity: 0.8;
+    animation: move-up-down-clouds 6s infinite;
+    animation-delay: 3s;
+}
+
+.cloud-container-balloons-5 {
+    position: relative;
+    top: 3rem;
+    left: 30rem;
+    transform: scale(0.8);
+    opacity: 0.8;
+    animation: move-up-down-clouds 6s infinite;
+    animation-delay: 3s;
+}
+
+.cloud-container-balloons-2 > div {
+    background-color: #cccccc;
+}
+
+.cloud-balloon {
     border-radius: 50%;
+    position: absolute;
+    left: 1rem;
+    background-color: #e2e5de;
+}
+
+.cloud-part-b1 {
     width: 5.5rem;
-    height: 6rem;
+    height: 4rem;
+    top: -0.2rem;
 }
 
-.kid-eye {
-    position: absolute;
-    top: 1.7rem;
-    width: 1.2rem;
-    height: 1.8rem;
-    background-color: white;
-    border-radius: 50%;
+.cloud-part-b2 {
+    top: 0.9rem;
+    left: -2rem;
+    width: 6rem;
+    height: 2.5rem;
 }
 
-.eye-left {
-    left: 1.3rem;
+.cloud-part-b3 {
+    top: 1.8rem;
+    right: 1.9rem;
+    width: 4rem;
+    height: 2rem;
 }
 
-.eye-right {
-    left: 3rem;
-}
-
-.kid-pupil {
-    position: absolute;
-    top: 0.5rem;
-    left: 0.1rem;
-
-    background-color: black;
-    width: 0.7rem;
-    height: 1rem;
-    border-radius: 50%;
-}
-
-.kid-nose {
-    position: absolute;
+.cloud-part-b4 {
     top: 1.6rem;
-    left: 0rem;
-    border-bottom-left-radius: 60%;
-    border-bottom-right-radius: 60%;
-
-    width: 0;
-    height: 0;
-    border-left: 0.7rem solid transparent;
-    border-right: 0.7rem solid transparent;
-    border-bottom: 0.7rem solid #e0ac69;
-    rotate: -90deg;
-    margin: 2rem;
+    right: -2rem;
+    width: 6rem;
+    height: 2rem;
 }
 
-.kid-mouth {
-    position: absolute;
-    top: 4.4rem;
-    left: 2.5rem;
-    width: 1rem;
-    height: 1rem;
-    background-color: transparent;
-    box-shadow: inset -5px 2px 0 1px red;
-    border-radius: 50%;
-    rotate: 90deg;
+.cloud-part-b5 {
+    top: 0.8rem;
+    right: -1.5rem;
+    width: 6.5rem;
+    height: 2.5rem;
 }
 
-.kid-ear {
-    position: absolute;
-    top: 2.5rem;
-    left: 4.5rem;
-    width: 1rem;
-    height: 1rem;
-    background-color: transparent;
-    box-shadow: inset -5px 2px 0 -2px #e0ac69;
-    border-radius: 50%;
-    rotate: 20deg;
+.cloud2-part-b1 {
+    width: 7rem;
+    height: 3rem;
+    top: -0.2rem;
 }
 
-.kid-container:hover {
-    animation: move-mouth-up 2s infinite;
+.cloud2-part-b2 {
+    top: 0.9rem;
+    left: -2rem;
+    width: 9rem;
+    height: 5rem;
 }
 
-@keyframes move-mouth-up {
+.cloud2-part-b3 {
+    top: 1.8rem;
+    right: 1.9rem;
+    width: 7rem;
+    height: 3rem;
+}
+
+.cloud2-part-b4 {
+    top: 2rem;
+    left: 6rem;
+    width: 9rem;
+    height: 3.5rem;
+}
+
+.cloud2-part-b5 {
+    top: 0.8rem;
+    right: -1.5rem;
+    width: 12rem;
+    height: 4rem;
+}
+
+@keyframes gradient-sky {
     0% {
-        transform: translateY(0rem) translateX(0rem) rotate(-7deg);
-    }
-    100% {
-        transform: translateY(-0.2rem) translateX(-0.1rem) rotate(-7deg);
-    }
-}
-
-/* @keyframes blink {
-    0% {
-        transform: translateY(5rem) translateX(-1.5rem) rotate(-20deg);
-        opacity: 0;
-    }
-    25% {
-        transform: translateY(10rem) translateX(10rem) rotate(10deg);
-        opacity: 0.7;
+        background-position: 0% 50%;
     }
     50% {
-        transform: translateY(9rem) translateX(12rem);
-        opacity: 0.9;
-    }
-    75% {
-        transform: translateY(7rem) translateX(17rem) rotate(-10deg);
-        opacity: 0.7;
+        background-position: 100% 50%;
     }
     100% {
-        transform: translateY(8rem) translateX(23rem) rotate(0deg);
-        opacity: 0;
+        background-position: 0% 50%;
     }
-} */
+}
 
-/* -----------------end kid animation */
+@keyframes move-up-down-clouds {
+    0%,
+    100% {
+        transform: translateY(0) scale(0.8);
+    }
+    50% {
+        transform: translateY(0.2rem) scale(0.8);
+    }
+}
+
+@keyframes move-up-down-balloon-1 {
+    0%,
+    100% {
+        transform: translateY(0) scale(0.6);
+    }
+    50% {
+        transform: translateY(-0.5rem) scale(0.6);
+    }
+}
+
+@keyframes move-up-down-balloon-2 {
+    0% {
+        transform: translateY(0) scale(0.8);
+    }
+    50% {
+        transform: translateY(-0.3rem) scale(0.8);
+    }
+    100% {
+        transform: translateY(0) scale(0.8);
+    }
+}
+
+@keyframes move-up-down-balloon-3 {
+    0%,
+    100% {
+        transform: translateY(0) scale(0.3);
+    }
+    50% {
+        transform: translateY(-0.2rem) scale(0.3);
+    }
+}
+@keyframes move-up-down-balloon-4 {
+    0%,
+    100% {
+        transform: translateY(0) scale(0.3);
+    }
+    50% {
+        transform: translateY(-0.2rem) scale(0.3);
+    }
+}
+
+@keyframes move-up-down-balloon-5 {
+    0%,
+    100% {
+        transform: translateY(0) scale(0.35);
+    }
+    50% {
+        transform: translateY(-0.2rem) scale(0.35);
+    }
+}
+
+@keyframes left-to-right-balloon-1 {
+    0% {
+        left: -12rem;
+    }
+    100% {
+        left: 44rem;
+    }
+}
+
+@keyframes left-to-right-balloon-2 {
+    0% {
+        left: -15rem;
+    }
+    100% {
+        left: 45.5rem;
+    }
+}
+
+@keyframes left-to-right-balloon-3 {
+    0% {
+        left: -12rem;
+    }
+    100% {
+        left: 44rem;
+    }
+}
+/* ------------------end balloons animation */
+
+.animations-container > p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    color: var(--purple);
+}

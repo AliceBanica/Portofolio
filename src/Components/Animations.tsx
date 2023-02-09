@@ -92,21 +92,116 @@ const OceanAnimation = () =>{
   )
 }
 
-const KidAnimation = () =>{
-    return <div className='kid-container'>
-            <div className='kid-head'>
-                <div className='head'></div>
-                <div className='kid-eye eye-left'>
-                    <div className='kid-pupil'></div>
+const BalloonsAnimation = () =>{
+    
+    return <div className='animation-balloon-container'> 
+                
+                <div className='balloons-container-3'>
+                    <div className='color-b3-4 balloon-4'></div>
+                    <div className='color-b3-5 balloon-5'></div>
+                    <div className='color-b3-1 balloon-1'></div>
+                    <div className='color-b3-2 balloon-2'></div>
+                    <div className='color-b3-3 balloon-3'></div>
+                    <div className='balloon-fire'></div>
+                    <div className='balloon-cord-left'></div>
+                    <div className='balloon-cord-right'></div>
+                    <div className='color-b3-basket balloon-basket'></div>
                 </div>
-                <div className='kid-eye eye-right'>
-                     <div className='kid-pupil'></div>
+                <div className='mountains-container'>
+                    <div className='mountain-3'></div>
+                    <div className='mountain-4'></div>
+                    <div className='mountain-1'></div>
+                    <div className='mountain-2'></div>
+                    <div className='mountain-6'></div>
+                    <div className='mountain-5'></div>
+                    
                 </div>
-                <div className='kid-nose'></div>
-                <div className='kid-mouth'></div>
-                <div className='kid-ear'></div>
-            </div>
-        </div>
+                <div className='balloons-container-4'>
+                    <div className='color-b4-4 balloon-4'></div>
+                    <div className='color-b4-5 balloon-5'></div>
+                    <div className='color-b4-1 balloon-1'></div>
+                    <div className='color-b4-2 balloon-2'></div>
+                    <div className='color-b4-3 balloon-3'></div>
+                    <div className='balloon-fire'></div>
+                    <div className='balloon-cord-left'></div>
+                    <div className='balloon-cord-right'></div>
+                    <div className='color-b4-basket balloon-basket'></div>
+                </div>
+
+                <div className='balloons-container-5'>
+                    <div className='color-b5-4 balloon-4'></div>
+                    <div className='color-b5-5 balloon-5'></div>
+                    <div className='color-b5-1 balloon-1'></div>
+                    <div className='color-b5-2 balloon-2'></div>
+                    <div className='color-b5-3 balloon-3'></div>
+                    <div className='balloon-fire'></div>
+                    <div className='balloon-cord-left'></div>
+                    <div className='balloon-cord-right'></div>
+                    <div className='color-b5-basket balloon-basket'></div>
+                </div>
+                <div className='balloons-container-1'>
+                    <div className='balloon-4'></div>
+                    <div className='balloon-5'></div>
+                    <div className='balloon-1'></div>
+                    <div className='balloon-2'></div>
+                    <div className='balloon-3'></div>
+                    <div className='balloon-fire'></div>
+                    <div className='balloon-cord-left'></div>
+                    <div className='balloon-cord-right'></div>
+                    <div className='balloon-basket'></div>
+                </div>
+                <div className="cloud-container-balloons-1">
+                    <div className='cloud-balloon cloud-part-b1'></div>
+                    <div className='cloud-balloon cloud-part-b2'></div>
+                    <div className='cloud-balloon cloud-part-b3'></div>
+                    <div className='cloud-balloon cloud-part-b4'></div>
+                    <div className='cloud-balloon cloud-part-b5'></div>
+                </div>
+
+                <div className="cloud-container-balloons-2">
+                    <div className='cloud-balloon cloud2-part-b1'></div>
+                    <div className='cloud-balloon cloud2-part-b2'></div>
+                    <div className='cloud-balloon cloud2-part-b3'></div>
+                    <div className='cloud-balloon cloud2-part-b4'></div>
+                    <div className='cloud-balloon cloud2-part-b5'></div>
+                </div>
+
+                <div className='balloons-container-2'>
+                    <div className='color-b2-4 balloon-4'></div>
+                    <div className='color-b2-5 balloon-5'></div>
+                    <div className='color-b2-1 balloon-1'></div>
+                    <div className='color-b2-2 balloon-2'></div>
+                    <div className='color-b2-3 balloon-3'></div>
+                    <div className='balloon-fire'></div>
+                    <div className='balloon-cord-left'></div>
+                    <div className='balloon-cord-right'></div>
+                    <div className='color-b2-basket balloon-basket'></div>
+                </div>
+                <div className="cloud-container-balloons-3">
+                    <div className='cloud-balloon cloud-part-b1'></div>
+                    <div className='cloud-balloon cloud-part-b2'></div>
+                    <div className='cloud-balloon cloud-part-b3'></div>
+                    <div className='cloud-balloon cloud-part-b4'></div>
+                    <div className='cloud-balloon cloud-part-b5'></div>
+                </div>
+
+                <div className="cloud-container-balloons-4">
+                    <div className='cloud-balloon cloud2-part-b1'></div>
+                    <div className='cloud-balloon cloud2-part-b2'></div>
+                    <div className='cloud-balloon cloud2-part-b3'></div>
+                    <div className='cloud-balloon cloud2-part-b4'></div>
+                    <div className='cloud-balloon cloud2-part-b5'></div>
+                </div>
+                <div className="cloud-container-balloons-5">
+                    <div className='cloud-balloon cloud2-part-b1'></div>
+                    <div className='cloud-balloon cloud2-part-b2'></div>
+                    <div className='cloud-balloon cloud2-part-b3'></div>
+                    <div className='cloud-balloon cloud2-part-b4'></div>
+                    <div className='cloud-balloon cloud2-part-b5'></div>
+                </div>
+                
+    </div>
+
 }
 
 const Animations = () => {
@@ -116,7 +211,7 @@ const Animations = () => {
                     <AnimationsTitle/>
                     <div className='animations-container'>
                         <OceanAnimation/>
-                        <KidAnimation/>
+                        <BalloonsAnimation/>
                         <p>More to come...</p>
                     </div>
                 </div>
