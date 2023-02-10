@@ -82,10 +82,10 @@ const OceanAnimation = () =>{
                 ></path>
                 </defs>
                 <g className="animated-waves">
-                <use href="#wave-pattern" x="40" y="3" fill="rgba(100,149,237,0.7"></use>
-                <use href="#wave-pattern" x="40" y="2" fill="rgba(100,149,237,0.5)"></use>
-                <use href="#wave-pattern" x="40" y="3" fill="rgba(100,149,237,0.3)"></use>
-                <use href="#wave-pattern" x="40" y="4" fill="rgba(100,149,237,0.3)"></use>
+                <use href="#wave-pattern" x="48" y="1" fill="rgba(100,149,237,0.9)"></use>
+                <use href="#wave-pattern" x="48" y="2" fill="rgba(100,149,237,0.7)"></use>
+                <use href="#wave-pattern" x="48" y="3" fill="rgba(100,149,237,0.5)"></use>
+                <use href="#wave-pattern" x="48" y="4" fill="rgba(100,149,237,0.5)"></use>
                 </g>
             </svg>
         </div>

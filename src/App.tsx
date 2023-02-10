@@ -5,7 +5,7 @@ import Animations from './Components/Animations';
 import Contact from './Components/Contact';
 import Intro from './Components/Intro';
 import Navbar from './Components/Navbar';
-import Technologies from './Components/Technologies';
+import Skills from './Components/Skills';
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
         <Navbar/>
         <Intro/>
       </div>
-      <Technologies/>
+      <Skills/>
       <About/>
-      <Animations/>
       <Contact/>
+      <Animations/>
     </div>
   );
 }

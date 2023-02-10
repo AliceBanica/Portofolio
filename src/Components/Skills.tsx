@@ -8,9 +8,9 @@ import imgJavascript from '../Images/javascript.png';
 import imgCss from '../Images/css3.png';
 import imgGit from '../Images/git.png';
 import imgGitblack from '../Images/github-black.png';
-import './Technologies.css';
+import './Skills.css';
 
-const Technologies = () => {
+const Skills = () => {
     const [skillsClicked, setSkillsClicked] = useState<boolean>(false);
 
     const handleClickSkills = () =>{
@@ -41,13 +41,13 @@ const Technologies = () => {
                 <div className='table-detail'></div>
             </div>
         )
-}
+    }
 
 
     return (
         <section>
             <div className={clsx('section-1', skillsClicked && 'section-1-clicked', !skillsClicked && 'section-1-not-clicked')}  onClick={handleClickSkills}>
-                <ul className={clsx('used-technologies', skillsClicked && 'used-technologies-clicked', !skillsClicked && 'used-technologies-not-clicked')} id='technologies'>
+                <ul className={clsx('used-technologies', skillsClicked && 'used-technologies-clicked', !skillsClicked && 'used-technologies-not-clicked')} id='skills'>
                     <li>
                         <img className='about-github-black' src={imgGitblack} alt="" />
                     </li>
@@ -79,4 +79,4 @@ const Technologies = () => {
     )
 }
 
-export default Technologies
+export default Skills
