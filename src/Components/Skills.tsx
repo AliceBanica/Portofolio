@@ -12,7 +12,7 @@ import './Skills.css';
 
 const Skills = () => {
     const [skillsClicked, setSkillsClicked] = useState<boolean>(false);
-
+     
     const handleClickSkills = () =>{
         setSkillsClicked(!skillsClicked)
     }
