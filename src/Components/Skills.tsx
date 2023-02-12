@@ -9,13 +9,11 @@ import imgCss from '../Images/css3.png';
 import imgGit from '../Images/git.png';
 import imgGitblack from '../Images/github-black.png';
 import './Skills.css';
+import { useGlobalContext } from '../Context';
 
 const Skills = () => {
-    const [skillsClicked, setSkillsClicked] = useState<boolean>(false);
-     
-    const handleClickSkills = () =>{
-        setSkillsClicked(!skillsClicked)
-    }
+    const {skillsClicked, setSkillsClicked, handleClickSkills,skillsRef} = useGlobalContext();
+
 
     const TechInfo = () =>{
     return (
@@ -47,7 +45,7 @@ const Skills = () => {
     return (
         <section>
             <div className={clsx('section-1', skillsClicked && 'section-1-clicked', !skillsClicked && 'section-1-not-clicked')}  onClick={handleClickSkills}>
-                <ul className={clsx('used-technologies', skillsClicked && 'used-technologies-clicked', !skillsClicked && 'used-technologies-not-clicked')} id='skills'>
+                <ul ref = {skillsRef} className={clsx('used-technologies', skillsClicked && 'used-technologies-clicked', !skillsClicked && 'used-technologies-not-clicked')} id='skills'>
                     <li>
                         <img className='about-github-black' src={imgGitblack} alt="" />
                     </li>

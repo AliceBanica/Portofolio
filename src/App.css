@@ -11,3 +11,15 @@
     height: 38rem;
     z-index: 100;
 }
+
+@media (max-width: 1024px) {
+    .top-side {
+        height: 30rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1550px) {
+    .top-side {
+        height: 34rem;
+    }
+}

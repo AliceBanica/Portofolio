@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
     gap: 2rem;
 }
 
@@ -33,6 +33,7 @@
 .github:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .linkedin {
@@ -44,6 +45,7 @@
 .linkedin:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .intro-images > a {
@@ -68,4 +70,52 @@
     margin-top: 0.7rem;
     padding-top: 0.2rem;
     color: var(--grey);
+}
+
+@media (max-width: 766px) {
+    .intro {
+        max-width: 80%;
+        height: 25rem;
+    }
+
+    .intro > :nth-child(1) {
+        font-size: 2.7rem;
+    }
+
+    .intro-images {
+        margin: 4rem 0 0 0;
+        gap: 2rem;
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .intro {
+        max-width: 80%;
+        height: 25rem;
+    }
+
+    .intro > :nth-child(1) {
+        font-size: 3.2rem;
+    }
+
+    .intro-images {
+        margin: 4rem 0 0 0;
+        gap: 2rem;
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1550px) {
+    .intro {
+        max-width: 60%;
+    }
+    .intro > :nth-child(1) {
+        font-size: 3.3rem;
+    }
+    .intro-images {
+        margin: 4rem 0 0 0;
+        gap: 2rem;
+        transform: scale(0.8);
+    }
 }

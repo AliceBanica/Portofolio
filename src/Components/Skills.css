@@ -161,13 +161,14 @@
 
 .table-tech {
     width: 70%;
+    table-layout: fixed;
     font-size: 1.2rem;
     margin: 0.5rem 1rem;
 }
 
 .table-tech > tbody > tr > th {
     text-align: start;
-    width: 30%;
+    width: 25%;
     padding-bottom: 1rem;
 }
 
@@ -195,5 +196,14 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-1 {
+        width: 80%;
+    }
+    .used-technologies > li > img {
+        transform: scale(0.2);
     }
 }

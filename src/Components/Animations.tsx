@@ -37,7 +37,7 @@ const OceanAnimation = () =>{
                     <div className="fin-2"></div>
                     <div className="fin-2 fin-bottom"></div>
                 </div>
-                 <div className="fish-3" >
+                <div className="fish-3" >
                     <div className="fish-body-3">
                         <div className="eye">
                             <div className="pupil"></div>
@@ -50,7 +50,7 @@ const OceanAnimation = () =>{
                 
 
             <div className="sun-container"></div>
-           
+            
             <div className="cloud-container-1">
                 <div className='cloud-1 cloud-part-1'></div>
                 <div className='cloud-1 cloud-part-2'></div>

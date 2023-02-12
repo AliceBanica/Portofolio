@@ -18,6 +18,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--darkGrey);
+    user-select: none;
 }
 
 .info-container {
@@ -54,6 +55,7 @@
     font-size: 1.2rem;
     color: #808080;
     font-weight: bold;
+    user-select: none;
 }
 
 .contact-me {
