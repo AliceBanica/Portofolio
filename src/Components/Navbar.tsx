@@ -17,7 +17,8 @@ export const Navbar = () => {
             <span>Alice</span>
             <span>Banica</span>
         </div>
-        <div className="nav-right">
+        {/* <div className="nav-right" > */}
+        <div className={`nav-right ${isOpen && "open"}`}>
             <ul  className={`nav-list ${isOpen && "open"}`}>
               <a href="#skills" >
                 <li onClick={()=>{handleClickSkills();scrollToSkills()}}>Skills</li>

@@ -43,12 +43,6 @@
     width: 5rem;
 }
 
-.section-1:hover {
-    height: 11rem;
-    transition: 1s;
-    padding: 1rem 0;
-}
-
 .tech-info {
     display: none;
     width: 50%;
@@ -199,11 +193,128 @@
     }
 }
 
-@media (max-width: 768px) {
-    .section-1 {
-        width: 80%;
+@media (max-width: 319px) {
+    .section-1-not-clicked,
+    .tech-hover,
+    .tech-pin,
+    .tech-pinned,
+    .table-detail {
+        display: none;
     }
-    .used-technologies > li > img {
-        transform: scale(0.2);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .section-1,
+    .tech-info-not-clicked,
+    .tech-info-clicked {
+        height: 10rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tech-info {
+        width: 90%;
+    }
+
+    .table-tech {
+        width: 100%;
+    }
+
+    .tech-pin,
+    .tech-pinned,
+    .used-technologies,
+    .used-technologies-clicked,
+    .used-technologies-not-clicked,
+    .used-technologies-not-clicked > li,
+    .table-detail,
+    .tech-hover,
+    .tech-hover-clicked,
+    .tech-pin,
+    .tech-pin-clicked,
+    .tech-pinned,
+    .tech-pinned-clicked {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .table-tech > tbody > tr > th {
+        padding: 0;
+    }
+    .tech-info-clicked,
+    .tech-info-clicked,
+    .section-1:hover > .tech-info {
+        box-shadow: none;
+    }
+
+    .section-1-clicked {
+        display: flex;
+    }
+
+    .tech-info-clicked {
+        display: flex;
+    }
+
+    .tech-info {
+        display: flex;
+    }
+
+    .table-skills {
+        width: 90%;
+    }
+
+    .table-row {
+        width: 50%;
+        float: left;
+    }
+
+    .table-line {
+        display: block;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .table-row {
+        width: 35%;
+        float: left;
+    }
+    .table-line {
+        display: block;
+        font-size: 1.1rem;
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .used-technologies {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0.7);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1550px) {
+    .section-1:hover {
+        height: 11rem;
+        transition: 1s;
+        padding: 1rem 0;
+    }
+
+    .used-technologies {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 1551px) {
+    .section-1:hover {
+        height: 11rem;
+        transition: 1s;
+        padding: 1rem 0;
     }
 }
