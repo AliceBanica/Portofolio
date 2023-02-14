@@ -59,23 +59,13 @@ const Experience = ({ newHeight }: { newHeight: any }) => {
                                 [3, `Master's Degree - Applied Informatics in Electrical Engineering (UPB)`], 
                                 [4, 'Manufacturing Trainee - Philip Morris Romania'], 
                                 [5, `Bachelor's Degree - Applied Informatics in Electrical Engineering (UPB)`]]);
-    // let expMap = new Map([[1, 'school desc'], 
-    //                         [2, 'michelin'], 
-    //                         [3, 'master'], 
-    //                         [4, 'philip'], 
-    //                         [5, 'bachelor']]);
+   
     let expMap = new Map();
     expMap.set(1, <ScoalaITDesc/>);
     expMap.set(2, <MichelinDesc/>);
     expMap.set(3, <MasterDesc/>);
     expMap.set(4, <TraineeDesc/>);
     expMap.set(5, <BachelorDesc/>);
-    let expDescMap = new Map([['school', false], ['michelin', false], ['master', false], ['philip', false], ['bachelor', false]]);
-
-    const resetExpDescMap = () => {
-        expDescMap.forEach((v, k) => v = false);
-    }
-
 
     const handleClickState = (param: any) => {
         setInfoClicked(param);
@@ -84,23 +74,6 @@ const Experience = ({ newHeight }: { newHeight: any }) => {
         const newHeightDiv = true;
         setShowInfoDiv(true);
         newHeight(newHeightDiv);
-
-        // let selectedExp:any = expMap.get(param); 
-
-        // if(!expDescMap.get(selectedExp)){
-        //     expDescMap.set(selectedExp,true);
-        //     console.log(expDescMap.get(selectedExp))
-        //     console.log(expDescMap);
-        //     resetExpDescMap();
-        //     const newHeightDiv = true;  
-        //     setShowInfoDiv(true);
-        //     newHeight(newHeightDiv);
-        // } else {
-        //     expDescMap.set(selectedExp, false);
-        //     const newHeightDiv = false;  
-        //     setShowInfoDiv(false);
-        //     newHeight(newHeightDiv);
-        // }
     }
 
     return <section className='experience-container'>
@@ -170,6 +143,131 @@ const AboutMe = () => {
     </div>
 }
 
+const AboutMobile = ()=>{
+    const [showInfoDivMich, setShowInfoDivMich] = useState<boolean>(false);
+    const [showInfoDivTrainee, setShowInfoDivTrainee] = useState<boolean>(false);
+    const [showInfoDivSchIT, setShowInfoDivSchIT] = useState<boolean>(false);
+    const [showInfoDivMaster, setShowInfoDivMaster] = useState<boolean>(false);
+    const [showInfoDivBach, setShowInfoDivBach] = useState<boolean>(false);
+    let ScoalaITDesc = () =>{
+        return <div className='desc-more-info-m'>
+                    <ul  className='exp-desc-ul-m'>
+                        <li>Build Front-end part of websites using HTML, CSS, JavaScript;</li>
+                        <li>Learn fundamental programming knowledge (OOP, Git);</li>
+                        <li>React Basics.</li>
+                    </ul>
+                </div>
+    }
+    let MichelinDesc = () => {
+        return <div className='desc-more-info-m'>
+                    <ul  className='exp-desc-ul-m'>
+                        <li>Optimize the process of obtaining and guaranteeing quality.</li>
+                        <li>Use tools (Fish bone diagram, 5 Why Analysis) in order to find the root cause of a problem;</li>
+                        <li>Identify and analyze possible risks and defects.</li>
+                    </ul>
+                </div>
+    }
+    let MasterDesc = () => {
+        return <div className='desc-more-info-m'>
+                    <ul  className='exp-desc-ul-m' >
+                        <li>Solve specific research problems, with the use of specialized software products / devices for applications in Electrical Engineering; </li>
+                    </ul>
+                </div>
+    }
+    let TraineeDesc = () => {
+        return <div className='desc-more-info-m'>
+                    <ul  className='exp-desc-ul-m'>
+                        <li>Train operators for specific tasks.</li>
+                        <li>Take part in the improvement of performance indicators process using specific tools;</li>
+                        <li>Create templates for trainings;</li>
+                    </ul>
+                </div>
+    }
+    let BachelorDesc = () => {
+        return <div className='desc-more-info-m'>
+                    <ul  className='exp-desc-ul-m' >
+                        <li>Apply fundamental knowledge in electrotechnics, analyzing and designing electrical installations, equipment and machines.</li>
+                    </ul> 
+                </div>
+    }
+
+
+    const handleClickState1 = () => {
+        setShowInfoDivMich(!showInfoDivMich);
+    }
+    const handleClickState2 = () => {
+        setShowInfoDivTrainee(!showInfoDivTrainee);
+    }
+    const handleClickState3 = () => {
+        setShowInfoDivSchIT(!showInfoDivSchIT);
+    }
+    const handleClickState4 = () => {
+        setShowInfoDivMaster(!showInfoDivMaster);
+    }
+    const handleClickState5 = () => {
+        setShowInfoDivBach(!showInfoDivBach);
+    }
+    
+
+    return <div className='section-mobile'>
+            <div className="description-mobile">
+                <p className='desc-title-mobile'>Short description</p>
+                <p className='desc-category-m'>About me</p>
+                {/* <h1>Alice Banica</h1> */}
+                <div className='location-m'>
+                    <img className='location-icon' src={location} alt="" />
+                    <span>Bucharest</span>
+                </div>
+                <p className='desc-info-m'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad eos molestias obcaecati quibusdam officia, rerum corrupti magni ullam necessitatibus.</p>
+            
+                <p className='desc-category-m'>Past Experience</p>
+                <p className='exp-category'>Jobs</p>
+                <ul className='exp-jobs-list-m'>
+                    <li>
+                        <div className='exp-more-info-m info-second-m' onClick={() => { handleClickState1() }}>?</div>
+                        <span>Quality Engineer - Michelin</span>
+                        <p className='experience-period-m'>Oct 2021 - Present</p>
+                        {/* {showInfoDiv && <ExperienceInfo message={expMap.get(infoClicked)} showInfo={showInfoDiv} title = {expTitleMap.get(expTitle)} />} */}
+                        {showInfoDivMich && <MichelinDesc/>}
+                    </li>
+                    <li>
+                        <div className='exp-more-info-m info-fourth-m' onClick={() => { handleClickState2() }}>?</div>
+                        <span> Manufacturing Trainee - Philip Morris Romania</span>
+                        <p className='experience-period-m'>Aug 2020 - Jul 2021</p>
+                        {/* {showInfoDiv && <ExperienceInfo message={expMap.get(infoClicked)} showInfo={showInfoDiv} title = {expTitleMap.get(expTitle)} />} */}
+                        {showInfoDivTrainee && <TraineeDesc/>}
+                    </li>
+                </ul>
+
+                <p className='exp-category'>School</p>
+                <ul className='exp-jobs-list-m'>
+                    <li>
+                        <div className='exp-more-info-m info-first-m' onClick={() => { handleClickState3() }}>?</div>
+                        <span>Scoala Informala de IT - Front-end Web Development</span>
+                        <p className='experience-period-m'>Jun 2021 - Oct 2021</p>
+                        {/* {showInfoDiv && <ExperienceInfo message={expMap.get(infoClicked)} showInfo={showInfoDiv} title = {expTitleMap.get(expTitle)} />} */}
+                        {showInfoDivSchIT && <ScoalaITDesc/>}
+                    </li>
+                    <li>
+                         <div className='exp-more-info-m info-third-m' onClick={() => { handleClickState4() }}>?</div>
+                        <span>Master's Degree - Applied Informatics in Electrical Engineering (UPB) </span>
+                        <p className='experience-period-m'>Oct 2020 - Iul 2022</p>
+                        {/* {showInfoDiv && <ExperienceInfo message={expMap.get(infoClicked)} showInfo={showInfoDiv} title = {expTitleMap.get(expTitle)} />} */}
+                        {showInfoDivMaster && <MasterDesc/>}
+                    </li>
+                    <li>
+                        <div className='exp-more-info-m info-fifth-m' onClick={() => { handleClickState5() }}>?</div>
+                        <span>Bachelor's Degree - Applied Informatics in Electrical Engineering (UPB)</span>
+                        <p className='experience-period-m'>Oct 2016 - Iul 2020</p>
+                        
+                        {/* {showInfoDiv && <ExperienceInfo message={expMap.get(infoClicked)} showInfo={showInfoDiv} title = {expTitleMap.get(expTitle)} />} */}
+                        {showInfoDivBach && <BachelorDesc/>}
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+}
 
 const About = () => {
     const [text, setText] = useState<string>('');
@@ -217,6 +315,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <AboutMobile/>
         </section>
     )
 }

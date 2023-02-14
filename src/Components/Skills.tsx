@@ -26,13 +26,13 @@ const Skills = () => {
                         <tr className='table-row'>
                             <td className='table-line'>&#11049; React</td>
                             <td className='table-line'>&#11049; JavaScript</td>
-                            <td className='table-line'>&#11049; CSS</td>
+                            <td className='table-line third-column'>&#11049; CSS</td>
                             <td className='table-line'>&#11049; Github</td>
                         </tr>
                         <tr className='table-row'>
                             <td className='table-line'>&#11049; Typescript</td>
                             <td className='table-line'>&#11049; HTML</td>
-                            <td className='table-line'>&#11049; Git</td>
+                            <td className='table-line third-column'>&#11049; Git</td>
                         </tr>
                     </tbody>
                 </table>

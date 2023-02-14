@@ -72,7 +72,7 @@
     color: var(--grey);
 }
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
     .intro {
         max-width: 80%;
         height: 25rem;
