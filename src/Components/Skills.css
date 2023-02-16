@@ -401,4 +401,8 @@
     .table-tech {
         margin-left: 1.5rem !important;
     }
+    .used-technologies-not-clicked {
+        display: flex;
+        justify-content: space-around;
+    }
 }

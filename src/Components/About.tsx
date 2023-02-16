@@ -298,12 +298,12 @@ const About = () => {
                         <ul className='description-points'>
                             <li>
                                 <button className={clsx('btn-info', isAboutMeActive && "active")} onClick={handleClickAbout}>
-                                    About Alice
+                                    <span>About Alice </span>
                                 </button>
                             </li>
                             <li>
                                 <button className={clsx("btn-info", isMyExperienceActive && "active")} onClick={handleClickExperience}>
-                                    Past Experience
+                                    <span className='past-exp-span'>Past Experience</span>
                                 </button>
                             </li>
                         </ul>
