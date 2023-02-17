@@ -110,7 +110,7 @@ const Experience = ({ newHeight }: { newHeight: any }) => {
                     <li className='not-li'>&nbsp;</li>
                     <li>
                         <div className='about-see-more  about-see-more-fourth' onClick={() => { handleClickState(4) }}>?</div>
-                        Manufacturing Trainee - Philip &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morris Romania
+                        Manufacturing Trainee - Philip &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morris Romania
                         <p className='experience-period period-right'>Aug 2020 - Jul 2021</p>
                     </li>
                     <li className='fifth-li not-li'>&nbsp;</li>
@@ -128,7 +128,6 @@ const ExperienceInfo = (props: any) => {
         <p className='exp-title'>{props.title}</p>
         <p className='exp-desc'>{props.message}</p>
         <div className='exp-detail'></div>
-         
     </div>
 }
 
@@ -139,7 +138,9 @@ const AboutMe = () => {
             <img className='location-icon' src={location} alt="" />
             <span>Bucharest</span>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad eos molestias obcaecati quibusdam officia, rerum corrupti magni ullam necessitatibus.</p>
+        <p>Creative and curious person, passionate about nature and travel. I'm working as a Quality Engineer at Michelin and in my free time I practice coding and learn new technologies for pursuing my dream, on becoming a Web Developer.</p>
+        <p>At the moment my most used technologies are React and TypeScript. My current goal is to improve my coding skills and be a part of a Software Development team.</p>
+
     </div>
 }
 
@@ -218,8 +219,9 @@ const AboutMobile = ()=>{
                     <img className='location-icon' src={location} alt="" />
                     <span>Bucharest</span>
                 </div>
-                <p className='desc-info-m'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad eos molestias obcaecati quibusdam officia, rerum corrupti magni ullam necessitatibus.</p>
-            
+                <p className='desc-info-m'>Creative and curious person, passionate about nature and travel. I'm working as a Quality Engineer at Michelin and in my free time I practice coding and learn new technologies for pursuing my dream, on becoming a Web Developer.</p>
+                <p className='desc-info-m'>At the moment my most used technologies are React and TypeScript. My current goal is to improve my coding skills and be a part of a Software Development team.</p>
+
                 <p className='desc-category-m'>Past Experience</p>
                 <p className='exp-category'>Jobs</p>
                 <ul className='exp-jobs-list-m'>

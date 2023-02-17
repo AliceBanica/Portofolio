@@ -225,6 +225,7 @@
 
 .aboutme-container {
     margin-left: 4.5rem;
+    text-align: justify;
 }
 
 .location-icon {
@@ -235,7 +236,7 @@
 .location-div {
     display: flex;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .location-div > span {
@@ -252,6 +253,7 @@
 .aboutme-container > p {
     font-size: 1.2rem;
     color: var(--darkGrey);
+    margin-top: 0;
 }
 
 .experience-more-info {
@@ -282,6 +284,7 @@
 
 .show-div {
     opacity: 1;
+    position: relative;
 }
 
 .more-info-active {
@@ -333,9 +336,6 @@
     }
 }
 
-@media (max-width: 319px) {
-}
-
 @media (min-width: 320px) and (max-width: 768px) {
     .description {
         display: none;
@@ -344,6 +344,7 @@
         width: 100%;
         box-shadow: 0 7px 2px -2px #d3d3d3;
         padding-bottom: 2rem;
+        text-align: justify;
     }
     .description-mobile {
         width: 90%;
@@ -579,7 +580,7 @@
     }
 
     .location-div {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.1rem;
     }
     .description {
         width: 100%;
@@ -598,12 +599,42 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+    .exp-detail {
+        position: absolute;
+        right: 5rem;
+        top: -1rem;
+    }
 }
 
 @media (min-width: 1551px) and (max-width: 1905px) {
     .experience-info {
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 100%;
+    }
+}
+
+@media (min-width: 2200px) and (max-width: 2700px) {
+    .experience-more-info {
+        width: 100%;
+    }
+    .exp-detail {
+        position: absolute;
+        right: 10rem;
+        top: -1rem;
+    }
+}
+
+@media (min-width: 2701px) {
+    .experience-more-info {
+        width: 80%;
+    }
+    .exp-detail {
+        position: absolute;
+        right: 10rem;
+        top: -1rem;
+    }
+    .experience-container {
+        align-items: center;
     }
 }
 
@@ -630,6 +661,9 @@
     }
     .description {
         width: 50%;
+    }
+    .description-left {
+        width: 20%;
     }
     .description-points > li::before {
         content: "\2022";

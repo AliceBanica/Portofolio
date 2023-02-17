@@ -4,7 +4,7 @@
 
 .animations-section {
     margin: 0 auto;
-    max-width: 50%;
+    width: 50%;
     float: none;
     padding-bottom: 3rem;
 }
@@ -12,12 +12,11 @@
 .animations-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 7rem;
+    column-gap: 5rem;
 }
 
 .animations-container > div {
     margin: 1rem 0;
-    /* border: 1px solid black; */
     box-shadow: 0 0 10px 8px #c2bee6;
 }
 /* ------------animations title */
@@ -201,15 +200,15 @@
 }
 .animated-waves > use:nth-child(2) {
     animation-delay: -3s;
-    animation-duration: 13s;
+    animation-duration: 12s;
 }
 .animated-waves > use:nth-child(3) {
     animation-delay: -4s;
-    animation-duration: 17s;
+    animation-duration: 15s;
 }
 .animated-waves > use:nth-child(4) {
     animation-delay: -5s;
-    animation-duration: 23s;
+    animation-duration: 17s;
 }
 @keyframes infinite-waves {
     0% {
@@ -914,4 +913,44 @@
     letter-spacing: 0.1rem;
     font-weight: bold;
     color: var(--purple);
+}
+
+@media (max-width: 770px) {
+    .animation-balloon-container,
+    .find-more-desc {
+        height: 13rem;
+    }
+}
+
+@media (max-width: 899px) {
+    .animations-section {
+        width: 80%;
+    }
+    .animations-container {
+        display: flex;
+        flex-direction: column;
+        /* flex-flow: row wrap; */
+    }
+    .animation-balloon-container,
+    .find-more-desc {
+        height: 17rem;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .animations-section {
+        width: 80%;
+    }
+    .animations-container {
+        column-gap: 3rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1550px) {
+    .animations-section {
+        width: 60%;
+    }
+    .animations-container {
+        column-gap: 3rem;
+    }
 }

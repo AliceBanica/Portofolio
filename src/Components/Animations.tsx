@@ -71,7 +71,7 @@ const OceanAnimation = () =>{
                 className="css-waves"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28"
+                viewBox="0 24 90 38"
                 preserveAspectRatio="none"
                 shape-rendering="auto"
             >
@@ -82,10 +82,10 @@ const OceanAnimation = () =>{
                 ></path>
                 </defs>
                 <g className="animated-waves">
-                <use href="#wave-pattern" x="48" y="1" fill="rgba(100,149,237,0.9)"></use>
-                <use href="#wave-pattern" x="48" y="2" fill="rgba(100,149,237,0.7)"></use>
-                <use href="#wave-pattern" x="48" y="3" fill="rgba(100,149,237,0.5)"></use>
-                <use href="#wave-pattern" x="48" y="4" fill="rgba(100,149,237,0.5)"></use>
+                <use href="#wave-pattern" x="20" y="0" fill="rgba(100,149,237,0.9)"></use>
+                <use href="#wave-pattern" x="30" y="0" fill="rgba(100,149,237,0.7)"></use>
+                <use href="#wave-pattern" x="30" y="0" fill="rgba(100,149,237,0.5)"></use>
+                <use href="#wave-pattern" x="30" y="0" fill="rgba(100,149,237,0.5)"></use>
                 </g>
             </svg>
         </div>
@@ -217,8 +217,6 @@ const Animations = () => {
                 </div>
         </section>
     )
-
-   
 }
 
 export default Animations

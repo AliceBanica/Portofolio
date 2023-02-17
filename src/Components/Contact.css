@@ -4,7 +4,7 @@
 
 .contact-container {
     margin: 0 auto;
-    max-width: 50%;
+    width: 50%;
     float: none;
     margin-bottom: 0.5rem;
     padding-bottom: 3rem;
@@ -30,6 +30,7 @@
 .phone-info > img,
 .email-info > img {
     width: 3rem;
+    user-select: none;
 }
 
 .address-info,
@@ -62,4 +63,103 @@
     padding-top: 0.5rem;
     font-size: 1.2rem;
     color: var(--purple) !important;
+}
+
+@media (min-width: 1025px) and (max-width: 1550px) {
+    .contact-container {
+        width: 60%;
+    }
+
+    .address-info,
+    .phone-info,
+    .email-info {
+        margin: 0 0.5rem;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+    .contact-container {
+        width: 80%;
+    }
+    .address-info,
+    .phone-info,
+    .email-info {
+        margin: 0 0.5rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 719px) {
+    .address-info > img,
+    .phone-info > img,
+    .email-info > img {
+        transform: scale(1);
+        margin-bottom: 0.5rem;
+    }
+    .contact-container {
+        width: 80%;
+        padding: 0;
+    }
+    .info-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .address-info,
+    .phone-info,
+    .email-info {
+        margin: 0 2rem 2rem 2rem;
+    }
+    .contact-container > p {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    .address-info > img,
+    .phone-info > img,
+    .email-info > img {
+        transform: scale(1);
+        margin-bottom: 0.5rem;
+    }
+    .contact-container {
+        width: 80%;
+        padding: 0;
+    }
+    .info-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .address-info,
+    .phone-info,
+    .email-info {
+        margin: 0 0rem 1rem 0rem;
+    }
+    .contact-container > p {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+    .info-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-container {
+        padding: 0;
+        width: 80%;
+    }
+    .contact-container > p {
+        justify-content: flex-start;
+    }
+    .address-info,
+    .phone-info,
+    .email-info {
+        margin-bottom: 3rem;
+    }
+    .address-info > img,
+    .phone-info > img,
+    .email-info > img {
+        transform: scale(1.3);
+        margin-bottom: 0.5rem;
+    }
 }
