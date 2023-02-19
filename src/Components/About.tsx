@@ -70,7 +70,6 @@ const Experience = ({ newHeight }: { newHeight: any }) => {
     const handleClickState = (param: any) => {
         setInfoClicked(param);
         setExpTitle(param);
-        console.log(expTitleMap.get(param))
         const newHeightDiv = true;
         setShowInfoDiv(true);
         newHeight(newHeightDiv);

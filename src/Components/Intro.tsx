@@ -4,7 +4,7 @@ import linkedin from '../Images/linked.png';
 import github from '../Images/github.png'
 const Intro = () => {
   const githubLink = 'https://github.com/AliceBanica';
-  const linkedinLink = 'linkedin.com/in/alice-banica';
+  const linkedinLink = 'http://www.linkedin.com/in/alice-banica';
   return (
     <div className='intro'>
       <span className='title'>Junior Frontend Developer</span>
