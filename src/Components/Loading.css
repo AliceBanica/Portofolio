@@ -1,7 +1,8 @@
-.loader-container {
+.container-loading {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -10,26 +11,32 @@
     animation: remove-loading 2s;
     animation-timing-function: linear;
 }
-
-.spinner {
-    width: 2.5rem;
-    height: 2.5rem;
-    border: 0.5rem solid;
-    border-color: rgba(90, 34, 139) transparent rgba(90, 34, 139) transparent;
-    border-radius: 50%;
-    animation: spin-anim 1.5s linear infinite;
+.loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes spin-anim {
-    0% {
-        transform: rotate(0deg);
+.loader-container > .balloons-container-4 {
+    top: -10rem;
+    left: 2rem;
+    margin: auto;
+    animation: move-up-down-balloon-4 2s ease infinite;
+}
+
+.loading-text {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+@keyframes move-up-down-balloon-4 {
+    0%,
+    100% {
+        transform: translateY(0.2rem) scale(0.75);
     }
     50% {
-        width: 4em;
-        height: 4rem;
-    }
-    100% {
-        transform: rotate(360deg);
+        transform: translateY(-0.2rem) scale(0.8);
     }
 }
 
