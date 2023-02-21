@@ -7,11 +7,13 @@ import Intro from './Components/Intro';
 import Navbar from './Components/Navbar';
 import Skills from './Components/Skills';
 import { SkillsProvider } from './Context';
+import Loading from './Components/Loading';
 function App() {
 
 
   return (
     <SkillsProvider>
+        <Loading/>
         <div className='app'>
           <div className='top-side'>
             <Navbar/>

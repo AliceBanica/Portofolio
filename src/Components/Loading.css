@@ -1,0 +1,46 @@
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(241, 231, 254);
+    z-index: 10;
+    animation: remove-loading 2s;
+    animation-timing-function: linear;
+}
+
+.spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.5rem solid;
+    border-color: rgba(90, 34, 139) transparent rgba(90, 34, 139) transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.5s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        width: 4em;
+        height: 4rem;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes remove-loading {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
