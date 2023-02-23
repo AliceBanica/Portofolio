@@ -17,7 +17,7 @@ function Loading() {
         {loading && (
             <div  className='container-loading'>
                 <div className="loader-container">
-                    <div className='balloons-container-4'>
+                    <div className='balloons-container-4-loading'>
                             <div className='color-b4-4 balloon-4'></div>
                             <div className='color-b4-5 balloon-5'></div>
                             <div className='color-b4-1 balloon-1'></div>

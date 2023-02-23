@@ -15,13 +15,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.loader-container > .balloons-container-4 {
-    top: -10rem;
+.balloons-container-4-loading {
+    position: absolute;
+    top: -7rem;
     left: 2rem;
-    margin: auto;
-    animation: move-up-down-balloon-4 2s ease infinite;
+    animation: move-up-down-balloon-4-loading 2s ease infinite;
 }
 
 .loading-text {
@@ -30,7 +31,7 @@
     font-weight: 500;
     letter-spacing: 0.2rem;
 }
-@keyframes move-up-down-balloon-4 {
+@keyframes move-up-down-balloon-4-loading {
     0%,
     100% {
         transform: translateY(0.2rem) scale(0.75);
