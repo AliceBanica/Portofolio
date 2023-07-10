@@ -19,10 +19,6 @@ import detailing4 from "../Images/detailing-4.png";
 import detailing5 from "../Images/detailing-5.png";
 import detailing6 from "../Images/detailing-6.png";
 
-import img4 from "../Images/javascript.png";
-import img5 from "../Images/linked.png";
-import img6 from "../Images/location-ping.png"
-
 import Modal from 'react-modal';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -62,9 +58,9 @@ const Projects = () => {
         Modal.setAppElement('#root');
     }, []);
 
-    const spotifyProjectDesc = ["Spotify App", " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa soluta sint ab laboriosam tenetur expedita adipisci, "];
-    const dogShelterProjectDesc = ["Dogs Shelter App", "Maiores odio nihil fugit ex explicabo animi vero debitis ipsum id a, illo molestias accusamus. Aut fugit, sapiente mollitia provident quis quaerat!"];
-    const detailingProjectDesc = ["Detailing App", " Tempora dolores mollitia ex nesciunt perferendis, maxime corrupti sapiente quam quia voluptatibus at eligendi nobis velit necessitatibus eos ad dolorum blanditiis dolore."]
+    const spotifyProjectDesc = ["Spotify App", "React App created with Vite, based on Spotify API that allows users to search for their favourite artist and get basic information like Top Tracks (a preview of each track is available) and albums.", "https://github.com/AliceBanica/artists-explorer"];
+    const dogShelterProjectDesc = ["Dogs Shelter App", "A fullstack project created with ReactJS and NodeJS that allows users to execute CRUD operations to get a list of dogs, to adopt or to bring a dog to the shelter.", "https://github.com/AliceBanica/Dog-Shelter"];
+    const detailingProjectDesc = ["Car Detailing App", "ReactJS App created with Vite, which is used for providing detailing auto services.", "https://github.com/AliceBanica/Car-Detailing"]
 
     const spotifyProjectImgs = [spotifyImg1, spotifyImg2, spotifyImg3];
     const dogShelterImgs = [shelter1, shelter2, shelter3, shelter4, shelter5, shelter6];
@@ -150,6 +146,7 @@ const Projects = () => {
                     <div className='project-desc-container'>
                         <h1>{currentDesc[0]}</h1>
                         <p>{currentDesc[1]}</p>
+                        <p>Project can be found <a href={currentDesc[2]}>here.</a></p>
                     </div>
                     <div className='close-modal-button-container'>
                         <button className='close-modal-button boxShadow' onClick={() => setIsModalOpen(false)} data-animation="fadeOut" data-remove="3000"></button>
