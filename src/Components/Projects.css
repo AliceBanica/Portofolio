@@ -410,6 +410,10 @@
     background-color: #333;
 }
 
+.slick-dots li button:before {
+    content: "" !important;
+}
+
 .custom-prev-arrow::before,
 .custom-next-arrow::before {
     position: absolute;

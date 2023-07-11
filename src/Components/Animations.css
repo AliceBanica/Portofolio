@@ -930,7 +930,6 @@
     .animations-container {
         display: flex;
         flex-direction: column;
-        /* flex-flow: row wrap; */
     }
     .animation-balloon-container,
     .find-more-desc {
